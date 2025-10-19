@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1001,
+    "title": "Email server connectivity intermittent",
+    "description": "The main SMTP server is intermittently failing to send external emails, resulting in queued messages and delay notifications for users.",
+    "customer": "AlphaTech Solutions",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-10-18T09:00:00Z"
+  },
+  {
+    "id": 1002,
+    "title": "Need access to SharePoint Marketing folder",
+    "description": "New marketing intern requires read/write access to the '2026 Campaign Assets' folder on the internal SharePoint site.",
+    "customer": "Internal Marketing Dept.",
+    "priority": "Low",
+    "status": "New",
+    "createdAt": "2025-10-18T10:30:00Z"
+  },
+  {
+    "id": 1003,
+    "title": "Reporting dashboard graphs failing to load",
+    "description": "Users in the EMEA region report that all graphical elements (charts, gauges) on the main executive dashboard are showing blank/empty squares.",
+    "customer": "BetaCorp Inc.",
+    "priority": "High",
+    "status": "Assigned",
+    "createdAt": "2025-10-17T14:45:00Z"
+  },
+  {
+    "id": 1004,
+    "title": "Request to update privacy policy link",
+    "description": "The hyperlink to the Privacy Policy in the application footer points to an old, cached PDF. Need to update it to the new external URL.",
+    "customer": "Zeta Financial Group",
+    "priority": "Medium",
+    "status": "Closed",
+    "createdAt": "2025-10-16T11:20:00Z"
+  },
+  {
+    "id": 1005,
+    "title": "Feature request: Dark Mode implementation",
+    "description": "Customers frequently request a Dark Mode option for the main SaaS platform to reduce eye strain during evening use.",
+    "customer": "Gamma Retail",
+    "priority": "Medium",
+    "status": "New",
+    "createdAt": "2025-10-15T08:00:00Z"
+  },
+  {
+    "id": 1006,
+    "title": "Checkout process fails on Chrome browser",
+    "description": "When attempting to finalize a purchase using Google Chrome (latest version), the checkout button remains disabled. Works fine on Firefox.",
+    "customer": "Delta Software Labs",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-10-14T17:00:00Z"
+  },
+  {
+    "id": 1007,
+    "title": "Billing statement discrepancy for Q3 2025",
+    "description": "Customer argues that the usage metrics recorded for July are incorrect, leading to an overcharge on their quarterly bill. Requires manual audit.",
+    "customer": "Epsilon Consulting",
+    "priority": "High",
+    "status": "Assigned",
+    "createdAt": "2025-10-13T09:30:00Z"
+  },
+  {
+    "id": 1008,
+    "title": "VPN connection drops every 30 minutes",
+    "description": "Remote users are experiencing consistent disconnections from the corporate VPN exactly every half hour, requiring manual reconnection.",
+    "customer": "Internal IT Operations",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-10-12T15:15:00Z"
+  },
+  {
+    "id": 1009,
+    "title": "Accessibility issue: Insufficient color contrast",
+    "description": "A recent audit revealed that the grey text on the light grey background in the help section does not meet WCAG AA contrast standards.",
+    "customer": "Theta Media Group",
+    "priority": "Medium",
+    "status": "New",
+    "createdAt": "2025-10-11T13:00:00Z"
+  },
+  {
+    "id": 1010,
+    "title": "User account stuck in 'Pending Approval' state",
+    "description": "A new user, 'Jane Smith', completed registration 48 hours ago but their account is still listed as pending activation in the admin portal.",
+    "customer": "Iota Investments",
+    "priority": "Medium",
+    "status": "Closed",
+    "createdAt": "2025-10-10T11:40:00Z"
+  },
+  {
+    "id": 1011,
+    "title": "Need to increase file upload size limit",
+    "description": "Current system limits file uploads to 50MB. Customer needs this limit raised to 250MB to accommodate large media files.",
+    "customer": "Kappa Global Services",
+    "priority": "Medium",
+    "status": "Assigned",
+    "createdAt": "2025-10-09T08:00:00Z"
+  },
+  {
+    "id": 1012,
+    "title": "Security vulnerability detected (XSS)",
+    "description": "A Cross-Site Scripting (XSS) vulnerability was found in the search input field, allowing injection of malicious scripts.",
+    "customer": "Lambda Logistics",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-10-18T08:15:00Z"
+  },
+  {
+    "id": 1013,
+    "title": "Internal application performance degradation",
+    "description": "The main internal data processing application is running 5x slower than normal since the last deployment. Investigating possible memory leaks.",
+    "customer": "Internal Engineering Team",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-10-18T16:00:00Z"
+  },
+  {
+    "id": 1014,
+    "title": "Missing translation for 'Pricing' page in German",
+    "description": "When selecting the German language, the 'Pricing' page content remains entirely in English. All other pages seem correctly translated.",
+    "customer": "Mu Industrial",
+    "priority": "Low",
+    "status": "Assigned",
+    "createdAt": "2025-10-17T09:45:00Z"
+  },
+  {
+    "id": 1015,
+    "title": "Error 500 when generating monthly PDF invoice",
+    "description": "Customer receives a generic HTTP 500 error when attempting to download their detailed invoice for the current month from the user portal.",
+    "customer": "Nu Telecom",
+    "priority": "High",
+    "status": "New",
+    "createdAt": "2025-10-19T06:00:00Z"
+  }
+]

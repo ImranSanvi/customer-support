@@ -3,6 +3,7 @@ import './App.css'
   import { ToastContainer} from 'react-toastify';
 import Navbar from './Components/Navbar/Navbar';
 import Banner from './Components/Banner/Banner';
+import TicketCard from './Components/TicketCard/TicketCard';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -13,6 +14,8 @@ function App() {
         <Navbar></Navbar>
 
         <Banner></Banner>
+
+        <TicketCard></TicketCard>
       </div>
 
       <ToastContainer />
