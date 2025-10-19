@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const TaskStatus = ({cartTicket, selectedTickets, setSelectedTickets, countProgress, setCountProgress, resolveTickets, setResolveTickets, countResolve, setCountResolve}) => {
 
@@ -11,6 +12,7 @@ const TaskStatus = ({cartTicket, selectedTickets, setSelectedTickets, countProgr
         setCountResolve(countResolve)
 
         setResolveTickets([...resolveTickets, complete])
+        toast("The Task is completed")
     }
     return (
         <div className='bg-white rounded-[5px] p-3 flex flex-col gap-4 mt-4'>

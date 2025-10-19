@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 
 const Ticket = ({ticket, countProgress, setCountProgress, selectedTickets, setSelectedTickets}) => {
@@ -10,6 +11,7 @@ const Ticket = ({ticket, countProgress, setCountProgress, selectedTickets, setSe
             setSelectedTickets([...selectedTickets, clickTicket])
             countProgress++;
             setCountProgress(countProgress)
+            toast("task is progress...")
         }
     }
     return (
