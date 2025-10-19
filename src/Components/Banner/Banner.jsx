@@ -2,7 +2,7 @@
 import React from 'react';
 import vector1 from '../../assets/vector1.png'
 
-const Banner = () => {
+const Banner = ({countProgress}) => {
     return (
         <div className='p-[40px] md:p-[80px] flex flex-col md:flex-row justify-between items-center gap-4 md:gap-7' >
             <div className="w-[100%] md:w-[708px] p-[40px] md:p-[80px] bg-cover bg-center bg-no-repeat rounded-[10px] text-white" style={{backgroundImage: `linear-gradient(125.07deg, rgba(99, 46, 227, 0.8), rgba(159, 98, 242, 0.8)), url(${vector1})`,
@@ -10,7 +10,7 @@ const Banner = () => {
             }}>
                 <div className="flex flex-col justify-center items-center">
                     <p className="font-normal text-[24px]">In-Progress</p>
-                    <h1 className="font-semibold text-[60px]">0</h1>
+                    <h1 className="font-semibold text-[60px]">{countProgress}</h1>
                 </div>
             </div>
 

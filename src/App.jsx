@@ -4,7 +4,7 @@ import './App.css'
 import Navbar from './Components/Navbar/Navbar';
 import Banner from './Components/Banner/Banner';
 import TicketCard from './Components/TicketCard/TicketCard';
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import Cart from './Components/Cart/Cart';
 import Footer from './Components/Footer/Footer';
 
@@ -17,19 +17,24 @@ const fetchTickets = async () =>{
 const ticketsPromise = fetchTickets()
 
 function App() {
-  // const [count, setCount] = useState(0)
+  
+  const [countProgress, setCountProgress] = useState(0)
+  const [selectedTickets, setSelectedTickets] = useState([])
 
   return (
     <>
       <div className='bg-[#f5f5f5]'>
         <Navbar></Navbar>
 
-        <Banner></Banner>
+        <Banner countProgress={countProgress}></Banner>
 
-        <div className='flex flex-col md:flex-row gap-5 pb-8 md:pb-16'>
-          <Suspense fallback={<div className='flex justify-center items-center'><span className="loading loading-dots loading-xl"></span></div>}><TicketCard ticketsPromise={ticketsPromise}></TicketCard></Suspense>
+        <div className='flex flex-col md:flex-row gap-5 mx-[40px] md:mx-[80px] pb-8 md:pb-16'>
+          <Suspense fallback={<div className='flex justify-center items-center'><span className="loading loading-dots loading-xl"></span></div>}>
+            <TicketCard ticketsPromise={ticketsPromise} countProgress={countProgress} setCountProgress={setCountProgress} selectedTickets={selectedTickets} setSelectedTickets={setSelectedTickets}></TicketCard>
 
-          <Cart></Cart>
+            <Cart selectedTickets={selectedTickets} setSelectedTickets={setSelectedTickets}></Cart>
+            
+          </Suspense>
         </div>
 
       </div>
