@@ -4,6 +4,8 @@ import './App.css'
 import Navbar from './Components/Navbar/Navbar';
 import Banner from './Components/Banner/Banner';
 import TicketCard from './Components/TicketCard/TicketCard';
+import { Suspense } from 'react';
+import Cart from './Components/Cart/Cart';
 
 
 const fetchTickets = async () =>{
@@ -23,7 +25,11 @@ function App() {
 
         <Banner></Banner>
 
-        <TicketCard ticketsPromise={ticketsPromise}></TicketCard>
+        <div className='flex flex-col md:flex-row gap-5'>
+          <Suspense fallback={<div className='flex justify-center items-center'><span className="loading loading-dots loading-xl"></span></div>}><TicketCard ticketsPromise={ticketsPromise}></TicketCard></Suspense>
+
+          <Cart></Cart>
+        </div>
       </div>
 
       <ToastContainer />
